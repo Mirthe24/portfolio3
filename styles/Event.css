@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+body{
+  margin: 0px;
+  background-color: #0C1130;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+p{
+  font-family: mukta;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+/*header*/
+header{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  
+}
+
+header img{
+  height: 35px;
+  margin-top: 2.5px;
+  margin-left: 5px;
+  float: left;
+}
+
+header p{
+  margin-top: 3px;
+  margin-left: 2px;
+  font-size: 15pt;
+   padding: 0px 20px;
+  position: relative;
+  display: inline-block;
+}
+
+
+header p:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header p:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/*main first*/
+h2{
+  font-size: 15pt;
+  color: white;
+  font-family: lora;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+h1{
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 25pt;
+  color: white;
+  font-family: lora;
+  font-weight: 475;
+}
+
+h1,h2{
+  margin-left: 20px;
+}
+
+#firstimg{
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+  
+}
+
+#gold{
+   background-image: url(../images/gold.png);
+   background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 200px;
+
+}
+
+article h2{
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+article p{
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 170%;
+}
+li{
+  font-family: mukta;
+  color: white;
+    margin-left: 20px;
+  margin-right: 20px;
+  line-height: 170%;
+}
+
+#stappen{
+  background-color: #4255C7;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#schetsen img, #wireframes img{
+  width: 85%;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+
+#Eind h2{
+  margin-top: 20px;
+}
+/*slider*/
+
+.slider {
+  width: 100%;
+   text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  
+  scroll-snap-points-x: repeat(473px);
+  scroll-snap-type: mandatory;
+  
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 473px;
+  margin-right: 800px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+
+.slides img{
+ height: 100vh;
+}
+
+
+#proces{
+  margin-bottom: 50px;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+footer{
+  background-image: url(../images/bottom-06.png);
+   background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+}
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  #schetsen img, #wireframes img{
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  }
+  #titel{
+    float: left;
+    margin-top: 80px;
+    margin-left:30px;
+  }
+  #firstimg{
+  width: 40%;
+  margin-top: 50px;
+  margin-right: 20px;  
+  }
+}
+
+@media only screen and (min-width: 960px){
+    header{
+    height: 55px;
+  }
+
+  header img{
+    height: 45px;
+    margin-top: 5px;
+  }
+
+  header p{
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+  #titel{
+    float: left;
+    margin-top: 200px;
+    
+  }
+  #firstimg{
+  width: 40%;
+  
+  }
+  article p, #stappen, article h2{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  #schetsen img, #wireframes img{
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #gold{
+    height: 300px;
+  }
+  article p, #stappen, article h2{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #stap{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #schetsen img, #wireframes img{
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+}

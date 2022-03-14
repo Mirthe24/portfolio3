@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+body{
+  margin: 0px;
+  background-color: #0C1130;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+p{
+  font-family: mukta;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#hamnav {
+  width: 100%;
+  top: 0;
+  z-index: 2;
+
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+
+#hamitems a {
+  float: right;
+  padding: 10px;
+  margin-right:  80px;
+  color: white;
+  text-align: center;
+  font-family: mukta;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+
+    display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+
+#hamitems a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#hamitems a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+/* main */
+
+#art{
+  background-image: url(../images/home-05.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 1700px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+#blank{
+  width: 100%;
+  height: 100vh;
+}
+
+/*projecten*/
+
+h1{
+  text-align: center;
+  font-size: 50pt;
+  color: white;
+  font-family: lora;
+  font-weight: 475;
+}
+
+#OverMij h1{
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+article{
+  background-color:  #0C1130;
+}
+
+h2{
+   text-align: center;
+  font-size: 30pt;
+  color: white;
+  font-family: lora;
+  font-weight: 400;
+  margin-bottom: 10px;
+    cursor: pointer;
+  padding: 15px 20px;
+  position: relative;
+}
+
+
+h2:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+h2:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+#Projecten img{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+    cursor: pointer;
+}
+
+/*over mij*/ 
+#OverMij img{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#OverMij p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+#Hobby img{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+    cursor: pointer;
+}
+
+#Contact p, button{
+  text-align: center;
+  font-size: 20pt;
+  margin: 20px;
+  border-collapse: collapse;
+
+}
+
+footer{
+  background-image: url(../images/bottom-06.png);
+   background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+}
+#Contact div{
+  display: flex;
+  justify-content: center;
+}
+#Contact button{
+  border: solid 4px white;
+  background-color: #0C1130;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom:10px;
+  margin-top: 0px;
+  width: 20%;
+  min-width: 130px;
+}
+
+#Contact button:hover{
+  background-color: #4255C7;
+}
+
+@media only screen and (min-width: 700px){
+  #art{
+  background-image: url(../images/home-04.png);
+  }
+  #blank{
+    height: 70vh;
+  }
+
+  #OverMij img{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #OverMij p{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #Hobby img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 840px){
+  #blank{
+    height: 90vh;
+  }
+  #Projecten img{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #OverMij h1{
+    margin-top: 0px;
+  }
+
+  #OverMij img{
+    width: auto;
+    height: 40vh;
+    margin-left: 10%;
+    margin-right: 5%;
+    float: left;
+  }
+  #OverMij p{
+    margin-right: 10%;
+  }
+  #Hobby h1{
+    margin-bottom: 0;
+  }
+  #Hobby h2{
+    margin-top: 10px;
+  }
+  #teken, #foto{
+    float: left;
+    width: 40%;
+    margin-bottom: 40px;
+  }
+
+  #teken{
+    margin-left: 7.5%;
+    margin-right: 2.5%
+  }
+
+  #foto{
+    margin-left: 2.5%;
+    margin-right: 7.5%;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 960px){
+    #art{
+  background-image: url(../images/home-03.png);
+  }
+
+  #Projecten {
+    display: grid;
+    grid-template-areas: 
+         "title images1"
+         "images2 title"
+         "title images3";
+
+  }
+  #Projecten img{
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 90px;
+  }
+
+  #Projecten h2{
+    grid-area: title;
+    margin-top: 10%;
+     margin-bottom: 10%;
+     font-size: 40pt;
+  }
+
+
+  #pr1 img{
+    grid-area: images1;
+    float: right;
+    margin-right: 5%;
+  }
+  #pr1 h2{
+    margin-top: 7%;
+    float: left;
+    margin-left: 20%;
+  }
+  #pr2 img{
+    grid-area: images2;
+    margin-left: 5%;
+  }
+  #pr2 h2{
+    margin-top: 7%;
+    float: right;
+    margin-right:  20%;
+  }
+  #pr3 img{
+    grid-area: images3;
+    float: right;
+    margin-right: 5%;
+  }
+  #pr3 h2{
+    float: left;
+    margin-left: 30%;
+  }
+
+  #OverMij img{
+    height: 50vh;
+  }
+
+  #OverMij p{
+    margin-bottom: 10vh;
+  }
+
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 1150px){
+  /* Show Hamburger Icon */
+  #hamnav label { 
+    display: inline-block; 
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    background-color: white;
+    margin-right: 0px;
+    font-family: mukta;
+    color: #0C1130;
+  }
+  #hamnav{
+    background-color: white;
+
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { 
+    display: none; 
+  }
+  #hamnav input:checked ~ #hamitems { 
+  display: grid; 
+  }
+  #hamitems a:nth-of-type(1){
+    order: 4
+  }
+   #hamitems a:nth-of-type(2){
+    order: 3
+  }
+   #hamitems a:nth-of-type(3){
+    order: 2
+  }
+   #hamitems a:nth-of-type(4){
+    order: 1
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1200px){
+     #art{
+  background-image: url(../images/home-01.png);
+  }
+  #blank{
+    height: 100vh;
+  }
+  #Projecten h2{
+    font-size: 45pt;
+  }
+    #Projecten img{
+    width: 40%;
+  }
+    #pr1 img{
+    margin-right: 10%;
+  }
+  #pr2 img{
+    margin-left: 10%;
+  }
+  #pr3 img{
+    margin-right: 10%;
+  }
+    #OverMij img{
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+  #OverMij p{
+    margin-right: 15%;
+    margin-bottom: 15vh;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #OverMij p{
+    margin-bottom: 30vh;
+  }
+    #teken, #foto{
+    width: 30%;
+  }
+
+  #teken{
+    margin-left: 15%;
+    margin-right: 5%
+  }
+
+  #foto{
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+
+}
